@@ -16,7 +16,7 @@ for index, row in df.iterrows():
     #Botão de adicionar user
     pyautogui.click(316,168, duration=1)
     #aguarda 3 segundos
-    sleep(3) 
+    sleep(2) 
     #Botão de adicionar login
     pyautogui.click(774,196, duration=1)
     pyautogui.click(774,196, duration=1)
@@ -32,13 +32,13 @@ for index, row in df.iterrows():
     pyautogui.write(confirmPassword)
     #next
     pyautogui.click(844,569, duration=1)
-    sleep(3)
+    sleep(2)
     #next
     pyautogui.click(844,569, duration=1)
-    sleep(3)
+    sleep(2)
     #tipo de usuário 'user'
     pyautogui.click(603,279, duration=1)
-    sleep(3)
+    sleep(2)
     #finish
     pyautogui.click(833,569, duration=1)
-    sleep(3)
+    sleep(2)
