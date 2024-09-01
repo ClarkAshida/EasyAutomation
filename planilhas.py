@@ -63,4 +63,4 @@ for index, row in df.iterrows():
 
 #Imprime a lista de usuários já cadastrados ao final do script
 for user in usuarios_cadastrados:
-    print(user)
+    print("usuário já cadastrado:", user)

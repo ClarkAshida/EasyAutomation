@@ -9,6 +9,7 @@ def sparkEasy():
 
     #Lê a planilha Excel
     df = pd.read_excel('assets/usuarios1.xlsx')
+    #df = pd.read_excel('assets/usuarios_testes.xlsx')
 
     #Cria uma lista para armazenar os usuários já cadastrados
     usuarios_cadastrados = []
@@ -65,4 +66,4 @@ def sparkEasy():
 
     #Imprime a lista de usuários já cadastrados ao final do script
     for user in usuarios_cadastrados:
-        print(user)
+        print("usuário já cadastrado:", user)
