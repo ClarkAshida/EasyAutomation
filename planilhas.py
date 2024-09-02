@@ -6,7 +6,8 @@ from time import sleep
 pyautogui.FailSafeException
 
 #Lê a planilha Excel
-df = pd.read_excel('assets/usuarios1.xlsx')
+#df = pd.read_excel('assets/usuarios1.xlsx')
+df = pd.read_excel('assets/usuarios_testes.xlsx')
 
 #Cria uma lista para armazenar os usuários já cadastrados
 usuarios_cadastrados = []

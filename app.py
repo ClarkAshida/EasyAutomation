@@ -8,7 +8,8 @@ from functions.SparkEasy import sparkEasy
 pyautogui.FailSafeException
 
 # Abre o menu de opções
-escolha = exibir_menu()
+#escolha = exibir_menu()
+escolha = 1
 print(f"Você escolheu a opção: {escolha}")
 
 if (escolha == 1):
