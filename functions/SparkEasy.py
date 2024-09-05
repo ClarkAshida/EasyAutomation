@@ -8,7 +8,7 @@ pyautogui.FailSafeException
 def sparkEasy():
 
     #Lê a planilha Excel
-    df = pd.read_excel('assets/usuarios2.xlsx')
+    df = pd.read_excel('assets/usuarios.xlsx')
 
     #Cria uma lista para armazenar os usuários já cadastrados
     usuarios_cadastrados = []
@@ -43,7 +43,7 @@ def sparkEasy():
         #Verifica se o erro de 'usuário já está cadastrado' apareceu
         try:
             #Localiza o botão de erro na tela
-            local = pyautogui.locateOnScreen('assets/botão_erro.png', confidence=0.9)
+            local = pyautogui.locateOnScreen('assets/errorSparkEasy.png', confidence=0.9)
             #Armazenar o nome do usuário já cadastrado em uma lista
             usuarios_cadastrados.append(username)
             #Clica no botão de 'OK' para sair do erro
