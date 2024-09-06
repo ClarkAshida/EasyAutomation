@@ -8,7 +8,7 @@ pyautogui.FailSafeException
 def ams():
 
     #Lê a planilha Excel
-    df = pd.read_excel('assets/usuarios.xlsx')
+    df = pd.read_excel('assets/AMS.xlsx')
 
     #Cria uma lista para armazenar os usuários já cadastrados
     usuarios_cadastrados = []
@@ -91,6 +91,7 @@ def ams():
             #finish
             pyautogui.click(847,683)
             #Aguarda 3 segundos
+            print(username, "cadastrado com sucesso!")
             sleep(3)
 
     #Imprime a lista de usuários já cadastrados ao final do script

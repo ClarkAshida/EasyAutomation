@@ -1,14 +1,13 @@
 import pyautogui
 import pandas as pd
-from time import sleep
-
+import time
 #Interromper a execução do programa ao arrastar o mouse para o lado superior esquerdo da tela.
 pyautogui.FailSafeException
 
 def dude():
 
     #Lê a planilha Excel
-    df = pd.read_excel('assets/usuarios2.xlsx')
+    df = pd.read_excel('assets/dude.xlsx')
 
     #Cria uma lista para armazenar os usuários já cadastrados
     usuarios_cadastrados = []
@@ -23,7 +22,9 @@ def dude():
         #Inserir o username
         pyautogui.click(687,317)
         #Exclui o 'admin' que já vem preenchido
-        pyautogui.press('backspace')
+        start_time = time.time()  # remember when we started
+        while (time.time() - start_time) < 1:  # for the next 5 seconds
+            pyautogui.press('backspace')  # press the backspace key
         #Preence o username
         pyautogui.write(username)
         #inserir o password
@@ -34,9 +35,9 @@ def dude():
         #clica no read
         pyautogui.click(653,419)
         #clica no apply (perigo)
-        #pyautogui.click(778,368)
+        pyautogui.click(778,368)
         #clica no ok (perigo)
-        #pyautogui.click(780,317)
+        pyautogui.click(780,317)
         #se der erro, clica no x
         try:
             #localiza o erro na tela
@@ -48,10 +49,13 @@ def dude():
             #clica no X e repete o loop
             pyautogui.click(778,368)
             #Aguarda 3 segundos
-            sleep(3)
+            time.sleep(3)
         except:
-            sleep(5)
+            print("usuário cadastrado com sucesso:", username)
+            time.sleep(5)
         
     #Imprime a lista de usuários já cadastrados ao final do script
     for user in usuarios_cadastrados:
         print("usuário já cadastrado:", user)
+
+dude()
