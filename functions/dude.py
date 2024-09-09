@@ -38,6 +38,7 @@ def dude():
         pyautogui.click(778,368)
         #clica no ok (perigo)
         pyautogui.click(780,317)
+        pyautogui.click(780,317)
         #se der erro, clica no x
         try:
             #localiza o erro na tela
@@ -52,7 +53,7 @@ def dude():
             time.sleep(3)
         except:
             print("usuário cadastrado com sucesso:", username)
-            time.sleep(5)
+            time.sleep(2)
         
     #Imprime a lista de usuários já cadastrados ao final do script
     for user in usuarios_cadastrados:
