@@ -25,12 +25,12 @@ Este projeto foi criado para facilitar a inserção de múltiplos usuários em s
 1. Clone o repositório para a sua máquina:
    ```bash
    git clone https://github.com/seuusuario/easyautomation.git
-```
+    ```
 
 2. Instale as dependências necessárias:
-```bash
-pip install -r requirements.txt
-```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 3. Prepare uma planilha Excel (.xlsx) para cada plataforma contendo os seguintes campos:
 
@@ -41,9 +41,9 @@ pip install -r requirements.txt
 - LOCAL: Setor do usuário.
 
 4. Execute o script Python:
-```bash
-python app.py
-```
+    ```bash
+    python app.py
+    ```
 
 5. Siga as instruções exibidas no menu para escolher a plataforma em que deseja realizar o cadastro (SparkEasy, AMS, NetNumen, Dude).
 
